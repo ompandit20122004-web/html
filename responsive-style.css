@@ -1,0 +1,79 @@
+/* Responsive Design CSS */
+
+/* Text content adjust */
+@media (max-width:991px) {
+  .text-content {
+    width: 100%;
+  }
+}
+
+/* Navbar brand */
+.navigation-wrap .navbar-brand img {
+  height: 3.8125rem;
+}
+
+/* Navbar base style */
+.navigation-wrap {
+  background-color: var(--white-color);
+}
+
+/* Navbar links */
+.navigation-wrap .nav-link {
+  line-height: 1.875rem;
+}
+
+/* Banner design */
+.top-banner {
+  padding: 9.375rem 0 9.375rem;
+}
+
+/* ---------- MEDIA QUERY FOR SMALL DEVICES ---------- */
+@media (max-width:767px) {
+
+  /* Text sizes */
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 2.0625rem;
+  }
+
+  /* Top banner padding (extra spacing for small screens) */
+  .top-banner {
+    padding: 10.875rem 0 9.375rem;
+  }
+
+  /* Center align navbar items only on small screens */
+  .navigation-wrap {
+    text-align: center;
+  }
+}
+
+/* story section */
+.story-section {
+  padding: 3rem 0;
+}
+
+/* carousel design */
+.testimonial-section .carousel-item {
+  padding: 11rem 3.125rem;
+}
+@media (max-width: 768px) {
+  .newsletter {
+    width: 90%;
+  }
+}
+
+
+.newsletter .main-btn {
+  width: 100%;
+  margin-top: 1rem;
+}
+/* footer */
+.footer .footer-link,
+.footer a i{
+padding: 0 0.7rem;
+}
+

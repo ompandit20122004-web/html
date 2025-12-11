@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  body{
+    margin: 0;
+    padding: 0;
+    font-family: arial,sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right top, #378e47, #597921, #6b6305, #744b04, #753312, #792827, #74223b, #67254c, #583665, #404673, #265277, #1a5c73);
+  }
+  .login{
+    background: rgba(0,0, 0, 0.6);
+    padding: 40px;
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+    color: #fff;
+  }
+  .login h2{
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #3ecaff;
+  }
+  .input-box{
+    margin-bottom: 17px;
+    position: relative;
+  }
+  .input-box input{
+    width: 70%%;
+    padding: 12px 40px 12px 12px;
+    border: none;
+    border-radius: 5px;
+    background: #111827;
+    color: #fff;
+    font-size: 14px;
+  }
+  .input-box i{
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translatey(-50%);
+    color: #bbb;
+  }
+  .btn{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: #00f2fe;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top:10px;
+  }
+  .btn:hover{
+    color: #238ce7;
+    background-color: #6f0a93;
+  }
+  .or-line{
+    margin: 20px 0;
+    color: #ccc;
+    font-size: 14px;
+   
+  }
+  .social-btn{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: #fff;
+    color: #444;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  .social-btn img{
+    width: 18px;
+    height: 18px;
+
+  }
+
+</style>
+
+
+
+<body>
+    <div class="login">
+        <h2>LOGIN</h2>
+        <form>
+            <div class="input-box">
+                <input type="text" placeholder="full name" required>
+                <i class="fa-solid fa-id-card"></i>
+            </div>
+            <div class="input-box">
+                <input type="email" placeholder="email"required>
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="password"required>
+                <i class="fa-solid fa-lock"></i>
+            </div><br>
+            <button class="btn">sign up</button>
+        </form>
+
+        <div class="or-line">or</div>
+
+        <button class="social-btn"><img src="https://img.icons8.com/color/48/google-logo.png"> Continue with
+            Google</button>
+        <br>
+        <button class="social-btn"><img src="https://img.icons8.com/color/48/facebook-new.png" /> Continue with
+            Facebook</button><br>
+        <button class="social-btn"><img src="https://img.icons8.com/ios-filled/50/mac-os.png" /> Continue with
+            Apple</button>
+    </div>
+</body>
+
+</body>
+
+</html>

@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Product Cards - Hover Overlay</title>
+  <style>
+    :root{
+      --bg: #3b3b3f;
+      --card-bg: #2f3236;
+      --accent: #00e6c1;
+      --white: #ffffff;
+      --shadow: 0 10px 18px rgba(0,0,0,0.45);
+      --radius: 10px;
+      --font-sans: "Segoe UI", Arial, sans-serif;
+    }
+
+    *{box-sizing: border-box;}
+    body{
+      margin:0;
+      background: linear-gradient(180deg, #3b3b3f, #404247);
+      font-family: var(--font-sans);
+      padding:40px 20px;
+    }
+
+    .wrap{
+      max-width:1100px;
+      margin:auto;
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+      gap:32px;
+    }
+
+    .card{
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      overflow:hidden;
+      box-shadow: var(--shadow);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover{
+      transform: translateY(-6px);
+      box-shadow: 0 18px 30px rgba(0,0,0,0.6);
+    }
+
+    .img-panel{
+      position: relative;
+      height: 200px;
+      overflow:hidden;
+    }
+    .img-panel img{
+      width:100%;
+      height:100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    .card:hover .img-panel img{
+      transform: scale(1.1);
+    }
+
+    /* overlay */
+    .overlay{
+      position:absolute;
+      inset:0;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      gap:12px;
+      opacity:0;
+      transform: translateY(40px);
+      transition: all 0.4s ease;
+      background: rgba(0,0,0,0.35);
+    }
+    .card:hover .overlay{
+      opacity:1;
+      transform: translateY(0);
+    }
+
+    .btn{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      min-width:160px;
+      padding:10px 14px;
+      border:none;
+      border-radius:6px;
+      background: var(--white);
+      font-weight:600;
+      cursor:pointer;
+      transition: background 0.2s ease;
+    }
+    .btn:hover{
+      background: var(--accent);
+      color:#000;
+    }
+
+    .card-body{
+      padding:20px;
+      text-align:center;
+    }
+    .title{
+      color:#fff;
+      text-transform:uppercase;
+      font-weight:700;
+      margin:0;
+    }
+    .price{
+      color: var(--accent);
+      font-size:22px;
+      font-weight:700;
+      margin:10px 0;
+    }
+    .desc{
+      font-size:14px;
+      color:#bbb;
+    }
+
+    /* icons */
+    .btn svg{
+      width:18px;
+      height:18px;
+      fill:#000;
+    }
+    .btn:hover svg{
+      fill:#000;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- Card 1 -->
+    <div class="card">
+      <div class="img-panel">
+        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=1400&auto=format&fit=crop" alt="Mobile">
+        <div class="overlay">
+          <button class="btn">
+            <!-- cart icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 18c-1.104.001-1.999.896-2 2s.896 1.999 2 2c1.105 0 2-.896 2-2s-.895-2-2-2zm10 0c-1.104.001-1.999.896-2 2s.896 1.999 2 2c1.105 0 2-.896 2-2s-.895-2-2-2zm-12.79-2l.938-4h12.406l1.414-6h-15.758l-.732-3h-2.478v2h1.367l3.6 14h12.293v-2h-11.05z"/></svg>
+            Add to Cart
+          </button>
+          <button class="btn">
+            <!-- eye icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 5c-7.633 0-12 7-12 7s4.367 7 12 7 12-7 12-7-4.367-7-12-7zm0 12c-2.762 0-5-2.239-5-5s2.238-5 5-5 5 2.239 5 5-2.238 5-5 5zm0-8c-1.656 0-3 1.345-3 3s1.344 3 3 3 3-1.345 3-3-1.344-3-3-3z"/></svg>
+            View Details
+          </button>
+        </div>
+      </div>
+      <div class="card-body">
+        <h3 class="title">Mobile Phone</h3>
+        <p class="price">$199.99</p>
+        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <div class="img-panel">
+        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=1400&auto=format&fit=crop" alt="Laptop">
+        <div class="overlay">
+          <button class="btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 18c-1.104.001-1.999.896-2 2s.896 1.999 2 2c1.105 0 2-.896 2-2s-.895-2-2-2zm10 0c-1.104.001-1.999.896-2 2s.896 1.999 2 2c1.105 0 2-.896 2-2s-.895-2-2-2zm-12.79-2l.938-4h12.406l1.414-6h-15.758l-.732-3h-2.478v2h1.367l3.6 14h12.293v-2h-11.05z"/></svg>
+            Add to Cart
+          </button>
+          <button class="btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 5c-7.633 0-12 7-12 7s4.367 7 12 7 12-7 12-7-4.367-7-12-7zm0 12c-2.762 0-5-2.239-5-5s2.238-5 5-5 5 2.239 5 5-2.238 5-5 5zm0-8c-1.656 0-3 1.345-3 3s1.344 3 3 3 3-1.345 3-3-1.344-3-3-3z"/></svg>
+            View Details
+          </button>
+        </div>
+      </div>
+      <div class="card-body">
+        <h3 class="title">Laptop</h3>
+        <p class="price">$599.99</p>
+        <p class="desc">High performance laptop for work and play.</p>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <div class="img-panel">
+        <img src="https://images.unsplash.com/photo-1519677100203-a0e668c92439?q=80&w=1400&auto=format&fit=crop" alt="Headphone">
+        <div class="overlay">
+          <button class="btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 18c-1.104.001-1.999.896-2 2s.896 1.999 2 2c1.105 0 2-.896 2-2s-.895-2-2-2zm10 0c-1.104.001-1.999.896-2 2s.896 1.999 2 2c1.105 0 2-.896 2-2s-.895-2-2-2zm-12.79-2l.938-4h12.406l1.414-6h-15.758l-.732-3h-2.478v2h1.367l3.6 14h12.293v-2h-11.05z"/></svg>
+            Add to Cart
+          </button>
+          <button class="btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 5c-7.633 0-12 7-12 7s4.367 7 12 7 12-7 12-7-4.367-7-12-7zm0 12c-2.762 0-5-2.239-5-5s2.238-5 5-5 5 2.239 5 5-2.238 5-5 5zm0-8c-1.656 0-3 1.345-3 3s1.344 3 3 3 3-1.345 3-3-1.344-3-3-3z"/></svg>
+            View Details
+          </button>
+        </div>
+      </div>
+      <div class="card-body">
+        <h3 class="title">Headphone</h3>
+        <p class="price">$29.99</p>
+        <p class="desc">Comfortable headphones with crystal clear sound.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

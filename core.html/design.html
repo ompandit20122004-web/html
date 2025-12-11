@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0px;
+        padding: 0px;
+        font-family: Arial,sans-serif;
+    }
+    header{
+        padding: 20px 50px;
+        border-bottom: 5px solid yellowgreen;
+        background-color: lightcoral;
+    }
+    header nav{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+     .logo img {
+      height: 40px;
+      width: auto;
+    }
+
+    /* 🔹 Search box */
+    .search-box {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      margin: 0 20px;
+    }
+
+    .search-box input {
+      width: 60%;
+      padding: 10px;
+      border: 2px solid #ebb608bf;
+      border-radius: 5px 0 0 5px;
+      outline: none;
+    }
+
+    .search-box button {
+      padding: 20px 30px;
+      border: none;
+      background-color: rgb(176, 24, 24);
+      color: white;
+      font-weight: bold;
+      border-radius: 0 5px 5px 0;
+      cursor: pointer;
+    }
+
+    .search-box button:hover {
+      background-color: darkred;
+    }
+
+    header nav ul {
+      display: flex;
+      padding: 0;
+      list-style: none;
+    }
+
+    header nav ul li {
+      padding: 0 20px;
+    }
+
+    header a {
+      text-decoration: none;
+      color: rgb(176, 24, 24);
+      font-weight: 700;
+    }
+
+    /* Cards Section */
+    section.flex-box {
+      margin: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      text-align: center;
+      width: 300px;
+      border-radius: 15px;
+      box-shadow: 2px 2px 10px #ccc;
+      padding: 15px;
+      background: #fff;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      height: 250px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .contentr h3 {
+      margin: 10px 0;
+      color: #333;
+    }
+
+    .contentr p {
+      color: gray;
+      font-size: 14px;
+    }
+</style>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#"><img src="https://tse3.mm.bing.net/th/id/OIP.S6wFqc4HVgrKnWIoQ2cQJwHaDf?pid=Api&P=0&h=180"alt="logo"></a>
+
+            </div>
+                <!-- search box -->
+                 <div class="search-box">
+                    <input type="text" placeholder="search for wallpapers">
+                    <button>seach</button>
+                 </div>
+                 <ul>
+                    <li><a href="#"></a>Home</a></li>
+                       <li><a href="#"></a>About</a></li>
+                          <li><a href="#"></a>Contact</a></li>
+                             <li><a href="#"></a>Service</a></li>
+                 </ul>
+    </header>
+    <section  class=" flex-box">
+        <div class="card">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.ulXx-V79gInaXetlAoGfkwHaEK?pid=Api&P=0&h=180">
+            <div class="content">
+                <h2>
+Price, product page₹78,999 M.R.P: ₹89,900M.R.P: ₹89,900 (12% off)
+Save extra with No Cost EMISave extra with No Cost EMI
+FREE delivery Tue, 23 Sept
+Or fastest delivery Tomorrow, 22 Sept</h2>
+                <p>iPhone 16 256 GB: 5G Mobile Phone with Camera Control,
+                     A18 Chip and a Big Boost in Battery Life. Works with AirPods; Black</p>
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.KPc0Mczlg4TFwqkJXzG4YAHaE7?pid=Api&P=0&h=180">
+            <div class="content">
+                <h2>
+Price, product page₹78,999 M.R.P: ₹89,900M.R.P: ₹89,900 (12% off)
+Save extra with No Cost EMISave extra with No Cost EMI
+FREE delivery Tue, 23 Sept
+Or fastest delivery Tomorrow, 22 Sept</h2>
+                <p>iPhone 16 256 GB: 5G Mobile Phone with Camera Control,
+                     A18 Chip and a Big Boost in Battery Life. Works with AirPods; Black</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.yCOfm6ykgWRk1sp49L-dtwHaEK?pid=Api&P=0&h=180">
+            <div class="content">
+                <h2>
+Price, product page₹78,999 M.R.P: ₹89,900M.R.P: ₹89,900 (12% off)
+Save extra with No Cost EMISave extra with No Cost EMI
+FREE delivery Tue, 23 Sept
+Or fastest delivery Tomorrow, 22 Sept</h2>
+                <p>iPhone 16 256 GB: 5G Mobile Phone with Camera Control,
+                     A18 Chip and a Big Boost in Battery Life. Works with AirPods; Black</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.TWetGuyD2XNSJeXLiKyDKQHaHa?pid=Api&P=0&h=180">
+            <div class="content">
+                <h2>
+Price, product page₹78,999 M.R.P: ₹89,900M.R.P: ₹89,900 (12% off)
+Save extra with No Cost EMISave extra with No Cost EMI
+FREE delivery Tue, 23 Sept
+Or fastest delivery Tomorrow, 22 Sept</h2>
+                <p>iPhone 16 256 GB: 5G Mobile Phone with Camera Control,
+                     A18 Chip and a Big Boost in Battery Life. Works with AirPods; Black</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.42eZIcpuQyDNlWOykHDePAHaHV?pid=Api&P=0&h=180">
+            <div class="content">
+                <h2>
+Price, product page₹78,999 M.R.P: ₹89,900M.R.P: ₹89,900 (12% off)
+Save extra with No Cost EMISave extra with No Cost EMI
+FREE delivery Tue, 23 Sept
+Or fastest delivery Tomorrow, 22 Sept</h2>
+                <p>iPhone 16 256 GB: 5G Mobile Phone with Camera Control,
+                     A18 Chip and a Big Boost in Battery Life. Works with AirPods; Black</p>
+            </div>
+        </div>
+        
+    </section>
+</body>
+</html>

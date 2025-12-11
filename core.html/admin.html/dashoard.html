@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Range Slider</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #111;
+        }
+
+        .container {
+            background: #fff;
+            padding: 30px;
+            width: 400px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .container h2 {
+            color: green;
+            margin-bottom: 10px;
+        }
+
+        .container h3 {
+            color: green;
+            margin-bottom: 20px;
+        }
+
+        .price-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .price-box label {
+            font-size: 14px;
+            color: #3e3d3d;
+        }
+
+        .price-box input {
+            width: 200px;
+            padding: 8px;
+            text-align: center;
+            border: none;
+            background: #e6e6e6;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .slider {
+            position: relative;
+            margin-top: 20px;
+            height: 5px;
+            background: #ddd;
+            border-radius: 5px;
+        }
+
+        .slider .progress {
+            position: absolute;
+            right: 15%;
+            left: 25%;
+            height: 5px;
+            background: green;
+            border-radius: 5px;
+        }
+
+
+        .range-input {
+            position: relative;
+        }
+
+        .range-input input {
+            position: absolute;
+            top: -7px;
+            height: 5px;
+            width: 100%;
+            -webkit-appearance: none;
+            background: none;
+             pointer-events: none;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: 16px;
+            width: 16px;
+            border-radius: 50%;
+            background: #444;
+            cursor: pointer;
+            pointer-events: auto;
+        }
+
+        input[type="range"]::-moz-range-thumb {
+            height: 16px;
+            width: 16px;
+            border-radius: 50%;
+            background: #444;
+            cursor: pointer;
+            pointer-events: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>GeeksForGeeks</h2>
+        <h3>Price Range Slider</h3>
+
+        <div class="price-box">
+            <label>Minimum Price</label>
+            <input type="text" value="2500" readonly>
+        </div>
+
+        <div class="price-box">
+            <label>Maximum Price</label>
+            <input type="text" value="8500" readonly>
+        </div>
+
+        <div class="slider">
+            <div class="progress"></div>
+        </div>
+        <div class="range-input">
+            <input type="range" min="0" max="10000" value="2500">
+            <input type="range" min="0" max="10000" value="8500">
+        </div>
+    </div>
+</body>
+
+</html>

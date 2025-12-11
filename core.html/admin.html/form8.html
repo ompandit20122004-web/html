@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Github Profile Searcher</title>
+  <style>
+    body {
+      background-color: #111; /* outer dark background */
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 50px auto;
+      background: #fdfbe9;
+      padding: 30px;
+      text-align: center;
+      border-radius: 8px;
+    }
+
+    h1 {
+      color: green;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .search-box input {
+      width: 80%;
+      padding: 10px 15px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+      outline: none;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+
+    .profile-card {
+      margin-top: 30px;
+      background: #aaf3ff;
+      border-radius: 12px;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      gap: 20px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    }
+
+    .profile-card img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 2px solid green;
+      object-fit: cover;
+    }
+
+    .profile-info {
+      text-align: left;
+    }
+
+    .profile-info h2 {
+      color: #0066cc;
+      font-size: 18px;
+      margin: 0 0 10px 0;
+    }
+
+    .stats {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .stats span {
+      margin-right: 10px;
+      color: #000;
+    }
+
+    .link {
+      background: red;
+      color: #fff;
+      padding: 3px 8px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>GeeksforGeeks Github Profile Searcher</h1>
+
+    <div class="search-box">
+      <input type="text" placeholder="Search a Github User">
+    </div>
+
+    <div class="profile-card">
+      <img src="https://avatars.githubusercontent.com/u/40610597?s=200&v=4" alt="Profile Image">
+      <div class="profile-info">
+        <h2>geeksforgeeks</h2>
+        <div class="stats">
+          <span>7 Followers</span>
+          <span>0 Following</span>
+          <span>1 Repos</span>
+        </div>
+        <a href="#" class="link">geeksforgeeks.github.io</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

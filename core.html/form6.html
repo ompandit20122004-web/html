@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body {
+    margin: 0;
+    background: linear-gradient(180deg, #3b3b3f, #404247);
+    font-family: Arial, sans-serif;
+    padding: 40px 20px;
+  }
+
+  .wrap {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+  }
+
+  .card {
+    background: #2f3236;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0, .45);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 30px rgba(0, 0, 0, 0.6);
+  }
+
+  .img {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+
+  .card:hover .img {
+    transform: scale(1.1);
+  }
+
+  .Overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.4s ease;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 10;
+  }
+
+  .card:hover .Overlay {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-width: 160px;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 10px;
+    background: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+
+  .btn:hover {
+    background: #00e6c1;
+    color: #000;
+  }
+
+  .card-body {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .title {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .price {
+    color: var(--accent);
+    font-size: 22px;
+    font-weight: 700;
+    margin: 10px 0;
+  }
+
+  .desc {
+    font-size: 14px;
+    color: #f7efef;
+  }
+
+  .card-body .title:hover {
+    color: green;
+  }
+
+  .price:hover {
+    color: darkgoldenrod;
+  }
+
+  .desc:hover {
+    color: rgb(0, 134, 139);
+  }
+</style>
+
+<body>
+  <div class="wrap">
+    <div class="card">
+      <div class="img">
+        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=1400&auto=format&fit=crop"
+          height="350px" width="350px" alt="Mobile">
+        <div class="Overlay">
+          <button class="btn">Add to cart</button>
+          <button class="btn"> view cart</button>
+        </div>
+      </div>
+      <div class="card-body">
+        <h3 class="title">Mobile Phone</h3>
+        <p class="price">$199.99</p>
+        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+
+    </div>
+
+    <div class="card">
+      <div class="img">
+        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=1400&auto=format&fit=crop"
+          height="350px" width="350px" alt="laptop">
+        <div class="Overlay">
+          <button class="btn">Add to cart</button>
+          <button class="btn"> view cart</button>
+        </div>
+      </div>
+      <div class="card-body">
+        <h3 class="title">laptop</h3>
+        <p class="price">$599.99</p>
+        <p class="desc">High performance laptop for work and play.</p>
+
+
+      </div>
+    </div>
+    <div class="card">
+      <div class="img">
+        <img src="https://images.unsplash.com/photo-1519677100203-a0e668c92439?q=80&w=1400&auto=format&fit=crop"
+          height="350px" width="350px" alt="headphone">
+        <div class="Overlay">
+          <button class="btn">Add to cart</button>
+          <button class="btn"> view cart</button>
+        </div>
+      </div>
+      <div class="card-body">
+        <h3 class="title">headphone</h3>
+        <p class="price">$399.99</p>
+        <p class="desc">Comfortable headphones with crystal clear sound.</p>
+
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

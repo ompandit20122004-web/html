@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nature Image Gallery</title>
+  <style>
+    body {
+      margin: 10px;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      padding: 20px 50px;
+      background-color: rgb(255, 240, 240);
+      border-bottom: 5px solid #ebb608bf;
+    }
+
+    header nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo img {
+      height: 60px;
+      width: auto;
+    }
+
+    /* 🔹 Search box */
+    .search-box {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      margin: 0 20px;
+    }
+
+    .search-box input {
+      width: 60%;
+      padding: 10px;
+      border: 2px solid #ebb608bf;
+      border-radius: 5px 0 0 5px;
+      outline: none;
+    }
+
+    .search-box button {
+      padding: 10px 20px;
+      border: none;
+      background-color: rgb(176, 24, 24);
+      color: white;
+      font-weight: bold;
+      border-radius: 0 5px 5px 0;
+      cursor: pointer;
+    }
+
+    .search-box button:hover {
+      background-color: darkred;
+    }
+
+    header nav ul {
+      display: flex;
+      padding: 0;
+      list-style: none;
+    }
+
+    header nav ul li {
+      padding: 0 20px;
+    }
+
+    header a {
+      text-decoration: none;
+      color: rgb(176, 24, 24);
+      font-weight: 700;
+    }
+
+    /* Cards Section */
+    section.flex-box {
+      margin: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      text-align: center;
+      width: 300px;
+      border-radius: 15px;
+      box-shadow: 2px 2px 10px #ccc;
+      padding: 15px;
+      background: #fff;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      height: 250px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .contentr h3 {
+      margin: 10px 0;
+      color: #333;
+    }
+
+    .contentr p {
+      color: gray;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="#"><img
+            src="https://tse1.mm.bing.net/th/id/OIP.FonuGPfIE6MOEqkMsnQE5gHaE8?pid=Api&P=0&h=180"
+            alt="Logo"></a>
+      </div>
+
+      <!-- 🔹 Search Box -->
+      <div class="search-box">
+        <input type="text" placeholder="Search for wallpapers...">
+
+        
+        <button>Search</button>
+      </div>
+
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Service</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="flex-box">
+    <div class="card">
+      <img src="https://wallpapers.com/images/featured/hdb30wtkjbn08xlf.jpg" alt="Nature 1">
+      <div class="contentr">
+        <h3>Most Beautiful Nature Wallpapers</h3>
+        <p>Free online wallpapers</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://wallpapers.com/images/high/iphone-11-pro-max-4k-scenic-river-zv326sbgwmtza1xk.webp" alt="Nature 2">
+      <div class="contentr">
+        <h3>Most Beautiful Nature Wallpapers</h3>
+        <p>Free online wallpapers</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.S1dPiODc5rCcWObk4DThygHaEo?pid=Api&P=0&h=180" alt="Nature 3">
+      <div class="contentr">
+        <h3>Most Beautiful Nature Wallpapers</h3>
+        <p>Free online wallpapers</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.XV7CefygWm6V-Gl3RBzNWgHaEo?pid=Api&P=0&h=180" alt="Nature 4">
+      <div class="contentr">
+        <h3>Most Beautiful Nature Wallpapers</h3>
+        <p>Free online wallpapers</p>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

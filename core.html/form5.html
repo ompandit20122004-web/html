@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0px;
+
+        font-family: "segoe UI", Arial, sans-serif;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 50px;
+        align-items: center;
+        box-shadow: 0 5 20 #382121;
+        background: #fff;
+        flex-wrap: wrap;
+        background-color: bisque;
+
+    }
+
+    .logo img {
+
+        height: 60px;
+        width: auto;
+    }
+
+    .search-box {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        margin: 0 20px;
+    }
+
+    .search-box input {
+        width: 60%;
+        padding: 10px;
+        border: 2px solid rgb(228, 228, 21);
+        border-radius: 5px 0 0 5px;
+        outline: none;
+    }
+
+    .search-box button {
+        padding: 10px 20px;
+        border: none;
+        background-color: rgb(130, 3, 3);
+        color: #fff;
+        font-weight: bold;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+    }
+
+    .search-box button:hover {
+        background-color: rgb(139, 0, 88);
+    }
+
+    header nav ul {
+        padding: 0;
+        display: flex;
+        list-style: none;
+    }
+
+    header nav ul li {
+        padding: 0 20px;
+
+    }
+
+    header a {
+        text-decoration: none;
+        color: red;
+        font-weight: 700;
+    }
+
+    .hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: linear-gradient(to right, #e063c5, #2fab9d);
+        padding: 50px;
+        min-height: 70vh;
+    }
+
+    .hero-text {
+        max-width: 600px;
+    }
+
+    .hero-text h1 {
+        font-size: 40px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .hero-text p {
+        font-size: 18px;
+        margin: 15px 0 25px;
+        line-height: 1.8;
+    }
+
+    .hero-text a {
+        background: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 30px;
+        font-weight: bold;
+        color: green;
+        border: 2px solid green;
+        transition: 0.3s;
+    }
+
+    .hero-text a:hover {
+        background: green;
+        color: #fff;
+    }
+
+    .form-box {
+        background: #fffcfc;
+        padding: 25px;
+        border-radius: 25px;
+        box-shadow: 0 8px 20px rgba(143, 19, 137, 0.15);
+        width: 280px;
+    }
+
+    .form-box h1 {
+        margin-bottom: 20px;
+        font-size: 20px;
+        color: #333;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-group label {
+        margin-bottom: 5px;
+        font-size: 14px;
+        display: block
+    }
+
+    .form-group input {
+        width: 90%;
+        padding: 10px 12px;
+        border: 1px solid #ccc;
+        outline: none;
+        border-radius: 10px;
+        transition: 0.3sec;
+    }
+
+    .form-group input:focus {
+        border-color: darkmagenta;
+        box-shadow: 0 0 5px rgb(87, 0, 209);
+    }
+
+    .form-box button {
+        width: 100%;
+        padding: 10px 12px;
+        border-radius: 30px;
+        border: 3px solid rebeccapurple;
+        font-weight: bold;
+        color: rebeccapurple;
+        transition: 0.3sec;
+        cursor: pointer;
+    }
+
+    .form-box button:hover {
+        transform: scale(1.05);
+        background-color: darkgoldenrod
+    }
+    .services{
+        text-align: center;
+        margin: 50px 0;
+        font-size: 30px;
+         }
+         .services span{
+            color: green;
+         }
+         .services hr{
+            width: 1000px;
+            border: 3px solid green;
+         }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://tse3.mm.bing.net/th/id/OIP.7elZo4mVLTwwBTsYWlB9RAHaEK?pid=Api&P=0&h=180" alt="logo">
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Search...">
+                <button>Search</button>
+            </div>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">career</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+
+
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-text">
+            <h1>This is heading</h1>
+            <p>Lorem ipsum is a dummy or placeholder text commonly used in graphic design, publishing, and web
+                development.</p>
+            <a href="#">click me</a>
+        </div>
+
+        <div class="form-box">
+            <h1>Connect with us.....</h1>
+            <div class="form-group">
+                <label>your name:</label>
+                <input type="text" placeholder="your name...">
+            </div>
+            <div class="form-group">
+                <label>Email:</label>
+                <input type="mail" placeholder="your Email...">
+            </div>
+            <div class="form-group">
+                <label>phone:</label>
+                <input type="text" placeholder="your phone...">
+            </div>
+            <div class="form-group">
+                <label>Age:</label>
+                <input type="number" placeholder="your Age...">
+            </div>
+            <button>summit</button>
+        </div>
+    </section>
+    <div class="services">
+        <b>our <span>service</span></b>
+        <hr>
+    </div>
+</body>
+
+</html>

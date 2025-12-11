@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* 🧭 Navbar */
+.navbar {
+  background: #1e1e2f;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar li a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+}
+
+/* 👋 Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  gap: 50px;
+}
+
+.hero .text {
+  flex: 1;
+}
+
+.hero .text h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.hero .text p {
+  margin: 20px 0;
+  line-height: 1.6;
+}
+
+.hero button {
+  padding: 10px 20px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero .image img {
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+/* 💻 Desktop View (Default) */
+
+/* 📱 Mobile View */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero .text h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero button {
+    width: 100%;
+  }
+}
+
+/* 🖥️ Tablet (medium screen) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero {
+    flex-direction: row;
+    gap: 20px;
+    padding: 30px;
+  }
+
+  .hero .text h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* 🌙 Dark Mode (bonus skill) */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #121212;
+    color: white;
+  }
+  .navbar {
+    background: #222;
+  }
+  .hero button {
+    background: #28a745;
+  }
+}
+
+</style>
+<body>
+
+  <header class="navbar">
+    <h1>Om Pandit</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="text">
+      <h2>Hi, I’m Om 👋</h2>
+      <p>I’m a Frontend Developer passionate about responsive and modern web design.</p>
+      <button>Hire Me</button>
+    </div>
+    <div class="image">
+      <img src="https://via.placeholder.com/400" alt="Profile Image">
+    </div>
+  </section>
+
+</body>
+</html>

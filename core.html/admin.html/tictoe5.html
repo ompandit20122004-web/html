@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Card Box with Header</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    /* ===== HEADER SECTION ===== */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #333;
+      color: #fff;
+      padding: 15px 40px;
+    }
+
+    header .logo {
+      font-size: 22px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin-left: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #000000;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ff9800;
+    }
+
+    /* ===== CARD SECTION ===== */
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 30px;
+      gap: 15px;
+    }
+
+    .card-box {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+      text-align: center;
+      width: 23%;
+      background: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-box .img {
+      background-image: url(https://plus.unsplash.com/premium_photo-1693258698597-1b2b1bf943cc?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0);
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .card-box .caption {
+      padding: 15px;
+    }
+
+    .card-box h4 {
+      margin-bottom: 8px;
+      color: #333;
+    }
+
+    .card-box p {
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .card-box button {
+      padding: 8px 15px;
+      border: none;
+      background: #333;
+      color: #fff;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .card-box button:hover {
+      background: #ff9800;
+    }
+
+    /* ===== MEDIA QUERIES ===== */
+
+    /* Mobile (max-width: 599px) */
+    @media (max-width: 599px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+      }
+
+      nav ul li {
+        margin: 8px 0;
+      }
+
+      .card-box {
+        width: 100%;
+      }
+    }
+
+    /* Tablet (600px–899px) */
+    @media (min-width: 600px) and (max-width: 899px) {
+      .card-box {
+        width: 45%;
+      }
+    }
+
+    /* Desktop (900px and above) */
+    @media (min-width: 900px) {
+      .card-box {
+        width: 23%;
+      }
+    }
+
+    .hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 50px;
+      gap: 50px;
+    }
+
+    .hero .text {
+      flex: 1;
+    }
+
+    .hero .text h2 {
+      font-size: 2rem;
+      color: #333;
+    }
+
+    .hero .text p {
+      margin: 20px 0;
+      line-height: 1.6;
+    }
+
+    .hero button {
+      padding: 10px 20px;
+      border: none;
+      background: #007bff;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .hero button:hover {
+      background-color: darkgreen;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="logo">OM PANDIT 😁</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== CARD SECTION ===== -->
+  <div class="container">
+    <div class="card-box">
+      <div class="img"></div>
+      <div class="caption">
+        <h4>Profile 1</h4>
+        <p>This is text</p>
+        <button>Read More</button>
+      </div>
+    </div>
+
+    <div class="card-box">
+      <div class="img"></div>
+      <div class="caption">
+        <h4>Profile 2</h4>
+        <p>This is text</p>
+        <button>Read More</button>
+      </div>
+    </div>
+
+    <div class="card-box">
+      <div class="img"></div>
+      <div class="caption">
+        <h4>Profile 3</h4>
+        <p>This is text</p>
+        <button>Read More</button>
+      </div>
+    </div>
+
+    <div class="card-box">
+      <div class="img"></div>
+      <div class="caption">
+        <h4>Profile 4</h4>
+        <p>This is text</p>
+        <button>Read More</button>
+      </div>
+    </div>
+  </div>
+  <section class="hero">
+    <div class="text">
+      <h2>Hi, I’m Om 👋</h2>
+      <p>I’m a Frontend Developer passionate about responsive and modern web design.</p>
+      <button>Hire Me</button>
+    </div>
+  </section>
+
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+<HTML>
+    <head>
+        <body>
+            <h1>welcome to online classes</h1>
+        </body>
+    </head>
+</HTML>

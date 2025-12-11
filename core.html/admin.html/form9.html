@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background:  #f2f2f2;
+    }
+    .container{
+        max-width: 500px;
+        margin: 50px auto;
+        background: #fff;
+        padding: 20px 39px;
+        border-radius: 20px;
+        box-shadow: 0 5px 8px rgb(38, 38, 38);
+    }
+    label{
+        display: block;
+        margin: 15px 0 8px;
+        font-weight: bold;
+    }
+    h2{
+        margin-bottom: 20px;
+        color: green;
+        font-weight: bold;
+        text-align: center;
+    }
+    input[type="range"]{
+        width: 100%;
+        margin: 5px 0;
+    }
+    input[type="text"],select,textarea{
+        width: 100%;
+        padding: 10px;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    button{
+        width: 100%;
+        background: green;
+        color:#fff;
+        border: none;
+        padding: 12px;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+     button:hover {
+      background: #0b7d73;
+    }
+    textarea{
+        height: 120px;
+        margin-top: 15px;
+        border:3px solid red;
+        resize: none;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <h2>Lorem Ipsum generator</h2>
+        <label for="paragraphs">paragraphs:</label>
+        <input type="range" id="paragraphs" min="1" max="10" vlaue="1">
+        <label for="words">words per paragraph:</label>
+        <input type="range" id="words" min="10" max="100" value="10">
+        <label for="tag">tag:</label>
+        <input type="text" id="tag" value="<p>">
+         <label for="html">include html:</label>
+         <select id="html">
+          <option>yes</option>
+          <option>no</option>
+         </select>
+         <button>generate lorem ipsum</button>
+         <textarea readonly></textarea>
+    </div>
+</body>
+</html>

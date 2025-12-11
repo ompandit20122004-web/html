@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    background: #f4f6fc;
+
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 15px 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    top: 0;
+    position: sticky;
+    z-index: 999;
+  }
+
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: green;
+
+  }
+
+  .search-box {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background: #f0f0f0;
+  }
+
+  .search-box input {
+    outline: none;
+    border: none;
+    background: transparent;
+    padding: 5px;
+  }
+
+  .search-box i {
+    color: #5c2fc2;
+  }
+
+  .icons {
+    display: flex;
+    align-items: center;
+  }
+
+  .icons i {
+    font-size: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+    color: #333;
+    transition: 0.3s;
+  }
+
+  .icons i:hover {
+    color: #5c2fc2;
+  }
+
+  .container {
+    display: flex;
+    margin-top: 0;
+  }
+
+  .sidebar {
+    width: 200px;
+    background: #fff;
+    min-height: calc(100vh - 60px);
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+   }
+
+  .sidebar ul {
+    list-style: none;
+
+  }
+
+  .sidebar ul li {
+    display: flex;
+    padding: 15px 20PX;
+    align-items: center;
+    color: #333;
+    cursor: pointer;
+    transition: 0.3s;
+
+  }
+
+  .sidebar ul li:hover {
+    background: #5c2fc2;
+    color: #fff;
+  }
+
+  .sidebar ul li i {
+    margin-right: 15px;
+  }
+
+  .main {
+    flex: 1;
+    padding: 20px;
+  }
+
+  .cards {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+  }
+
+  .card {
+    flex: 1;
+    background: linear-gradient(135deg, #5c2fc2, #6e48aa);
+
+    padding: 20px;
+    border-radius: 12px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .card i {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .card h1 {
+    margin: 5px 0;
+  }
+
+  .card:hover {
+    transform: scale(1.1);
+  }
+
+  .table-section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .table-section h2 {
+    color: #5c2fc2;
+    margin-bottom: 15px;
+    justify-content:right;
+  }
+
+  .table-header {
+    display: flex;
+    justify-content: space-between;
+    /* Heading left, Button right */
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .view-all {
+    background: purple;
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  .view-all:hover {
+    background: #5a0ca4;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  table th,
+  table td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  table th {
+    color: #555;
+  }
+
+  .status {
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 12px;
+  }
+
+  .published {
+    background: #28a745;
+  }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    background: #5c2fc2;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: bold;
+  }
+</style>
+
+<body>
+  <header>
+    <div class="logo">GeeksForGeeks</div>
+    <div class="search-box">
+      <input type="text" placeholder="search...">
+      <i class="fa fa-search"></i>
+    </div>
+    <div class="icons">
+      <i class="fa-solid fa-bell"></i>
+      <i class="fa fa-user-circle"></i>
+      <i class="fa-solid fa-list"></i>
+    </div>
+  </header>
+  <div class="container">
+    <div class="sidebar">
+      <ul>
+        <li><i class="fa-solid fa-house"></i>Dashboard</li>
+        <li><i class="fa fa-file-alt"></i> Articles</li>
+        <li><i class="fa fa-chart-line"></i> Report</li>
+        <li><i class="fa fa-university"></i> Institution</li>
+        <li><i class="fa fa-user"></i> Profile</li>
+        <li><i class="fa fa-cog"></i> Settings</li>
+        <li><i class="fa fa-sign-out-alt"></i> Logout</li>
+      </ul>
+    </div>
+    <div class="main">
+      <div class="cards">
+        <div class="card">
+          <i class="fa fa-eye"></i>
+          <h1>60.5k</h1>
+          <p>Article Views</p>
+        </div>
+        <div class="card">
+          <i class="fa fa-thumbs-up"></i>
+          <h1>150</h1>
+          <p>Likes</p>
+        </div>
+        <div class="card">
+          <i class="fa fa-comment"></i>
+          <h1>320</h1>
+          <p>Comments</p>
+        </div>
+        <div class="card">
+          <i class="fa fa-check-circle"></i>
+          <h1>70</h1>
+          <p>Published</p>
+        </div>
+      </div>
+      <div class="table-section">
+        <div class="table-header">
+          <h2>Recent Article</h2>
+          <a href="#" class="view-all">View All</a>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Article</th>
+              <th>Views</th>
+              <th>comments</th>
+              <th>status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Article 73</td>
+              <td>2.9k</td>
+              <td>210</td>
+              <td><span class="status published">published</span></td>
+            </tr>
+            <tr>
+              <td>Article 72</td>
+              <td>1.5k</td>
+              <td>360</td>
+              <td><span class="status published">published</span></td>
+            </tr>
+            <tr>
+              <td>Article 71</td>
+              <td>1.1k</td>
+              <td>150</td>
+              <td><span class="status published">published</span></td>
+
+            </tr>
+            <tr>
+              <td>Article 70</td>
+              <td>1.2k</td>
+              <td>420</td>
+              <td> <span class="status published">published</span></td>
+            </tr>
+            <tr>
+              <td>Article 69</td>
+              <td>2.6k</td>
+              <td>190</td>
+              <td> <span class="status published">published</span></td>
+            </tr>
+            <tr>
+              <td>Article 68</td>
+              <td>1.9k</td>
+              <td>390</td>
+              <td><span class="status published">published</span></td>
+            </tr>
+            <tr>
+              <td>Article 67</td>
+              <td>1.2k</td>
+              <td>680</td>
+              <td><span class="status published">published</span></td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+      <div class="footer">ADMIN PANEL</div>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>

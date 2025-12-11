@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bakery</title>
+</head>
+<style>
+	body {
+		margin: 0;
+		background: linear-gradient(180deg, #3b3b3f, #404247);
+		font-family: Arial, sans-serif;
+		padding: 50px 40px;
+	}
+
+	.wrap {
+
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 32px;
+		max-width: 1100px;
+		margin: auto;
+		display: grid;
+
+	}
+
+	.card {
+		background: #2f3236;
+		overflow: hidden;
+		border-radius: 30px;
+		box-shadow: 0 10px 18px rgba(0, 0, 0, 0, .45);
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+	}
+
+	.card:hover {
+		transform: translateY(-6px);
+		box-shadow: 0 18px 30px rgba(0, 0, 0, 0.6);
+	}
+
+	.img {
+		width: 100%;
+		transition: transform 0, 4s ease;
+		object-fit: cover;
+		position: relative;
+		height: 200px;
+		overflow: hidden;
+
+	}
+
+	.card:hover .img {
+		transform: scale(1.1);
+	}
+
+	.overlay {
+		position: absolute;
+		inset: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 12px;
+		opacity: 0;
+		transform: translateY(40px);
+		transition: all 0.4s ease;
+		background: rgba(0, 0, 0, 0.35);
+		border-radius: 10px;
+	}
+
+	.card:hover .overlay {
+		opacity: 1;
+		transform: translateY(0);
+
+	}
+
+	.btn {
+		display: flex;
+		justify-content: center;
+		border-radius: 10px;
+		align-items: center;
+		gap: 8px;
+		min-width: 160px;
+		font-weight: 700;
+		cursor: pointer;
+		border: none;
+		background: #ffffff;
+		padding: 10px 40px;
+		transition: background 0.2s ease;
+	}
+	.btn:hover {
+    background: #00e6c1;
+    color: #000;
+  }
+  .main{
+	padding: 20px;
+	text-align: center;
+  }
+  .title{
+	text-transform: uppercase;
+	font-weight: 700;
+	margin: 0;
+	color: #fff;
+  }
+    .price{
+		padding: 18px;
+		font-weight: 900;
+	margin: 0;
+	color:var(--accent);
+	}
+	.desc{
+		padding: 0px 7px;
+		font-weight: 500;
+	margin: 0;
+	color: #fcf8f8;
+	}
+   .title:hover {
+    color: green;
+	
+  }
+
+  .price:hover {
+    color: darkgoldenrod;
+  }
+
+  .desc:hover {
+    color: rgb(0, 134, 139);
+  }
+</style>
+
+<body>
+	<div class="wrap">
+		<div class="card">
+			<div class="img">
+				<img src="https://tse3.mm.bing.net/th/id/OIP.mrliajAcK_FESJOmmhv6xwHaEo?pid=Api&P=0&h=180"
+					height="300px" width="350px">
+				<div class="overlay">
+					<button class="btn">add to cart</button>
+					<button class="btn">view to cart</button>
+				</div>
+			</div>
+			<div class="main">
+				<h2 class="title">pizza</h2>
+				<p class="price">$49</p>
+				<p class="desc">food is the best and pizza is best choice of people and people is demanding pizza.</p>
+			</div>
+		</div>
+		<div class="card">
+			<div class="img">
+				<img src="https://tse2.mm.bing.net/th/id/OIP.u7Cpcwj3LhT2GnOEzIWe8gHaEF?pid=Api&P=0&h=180"
+					height="300px" width="350px">
+
+				<div class="overlay">
+					<button class="btn">add to cart</button>
+					<button class="btn">view to cart</button>
+				</div>
+			</div>
+			<div class="main">
+				<h2 class="title">cake</h2>
+				<p class="price">$199</p>
+				<p class="desc">food is the best and cake is best choice of people and people is demanding cake.</p>
+			</div>
+		</div>
+		<div class="card">
+			<div class="img">
+				<img src="https://tse1.mm.bing.net/th/id/OIP.Wdt1VLlrdeAez9DkGgFVsAHaEo?pid=Api&P=0&h=180"
+					height="300px" width="350px">
+
+				<div class="overlay">
+					<button class="btn">add to cart</button>
+					<button class="btn">view to cart</button>
+				</div>
+			</div>
+			<div class="main">
+				<h2 class="title">burger</h2>
+				<p class="price">$99</p>
+				<p class="desc">food is the best and burger is best choice of people and people is demanding burger.</p>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

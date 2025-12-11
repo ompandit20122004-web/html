@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<style>
+header nav {
+    background-color: #000;
+}
+header a {
+    color: #fff !important;
+}
+section.bg-carousel {
+    position: relative;
+}
+section.bg-carousel img {
+    height: 550px;
+    object-fit: cover;
+}
+section.bg-carousel .caption-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+</style>
+<body>
+	<header>
+		<nav class="navbar navbar-dark navbar-expand-lg fixed-top">
+		  <div class="container">
+		    <a class="navbar-brand" href="#">My Logo</a>
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <div class="collapse navbar-collapse" id="navbarNav">
+		      <ul class="navbar-nav ms-auto">
+		        <li class="nav-item">
+		          <a class="nav-link active" aria-current="page" href="#">Home</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#">Features</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#">Pricing</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#">Contact</a>
+		        </li>
+		        <li class="nav-item dropdown">
+		          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		            Our Plans
+		          </a>
+		          <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdownMenuLink">
+		            <li><a class="dropdown-item text-dark" href="#">Plan-1</a></li>
+		            <li><a class="dropdown-item text-dark" href="#">Plan-2</a></li>
+		            <li><a class="dropdown-item text-dark" href="#">Plan-3</a></li>
+		          </ul>
+		        </li>
+		        <li class="nav-item">
+		          <button type="button" class="btn btn-danger ms-4" data-bs-toggle="modal" data-bs-target="#myModal">Register with us</button>
+		        </li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+	</header>
+	<section class="bg-carousel mt-5">
+		<div id="myCarousel" class="carousel slide">
+			<div class="carousel-indicators">
+			    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
+			    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+			    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+			</div>
+			<div class="carousel-inner">
+			    <div class="carousel-item active">
+			      <img src="https://plus.unsplash.com/premium_photo-1685793803975-2f330a16ee10?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870" class="d-block w-100" alt="bgImage01">
+			      <div class="caption-box carousel-caption d-none d-md-block w-50">
+			        <h5 class="display-1">First slide label</h5>
+			        <p class="fs-4 fw-lighter text-light">Some representative placeholder content for the first slide.</p>
+			      </div>
+			    </div>
+			    <div class="carousel-item">
+			      <img src="https://images.unsplash.com/photo-1739773629950-1ce0b108b5b8?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=725" class="d-block w-100" alt="bgImage02">
+			      <div class="caption-box carousel-caption d-none d-md-block w-50">
+			        <h5 class="display-1">Second slide label</h5>
+			        <p class="fs-4 fw-lighter text-light">Some representative placeholder content for the first slide.</p>
+			      </div>
+			    </div>
+			    <div class="carousel-item">
+			      <img src="https://images.unsplash.com/photo-1600019403514-a09d06e09756?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870" class="d-block w-100" alt="bgImage03">
+			      <div class="caption-box carousel-caption d-none d-md-block w-50">
+			        <h5 class="display-1">Third slide label</h5>
+			        <p class="fs-4 fw-lighter text-light">Some representative placeholder content for the first slide.</p>
+			      </div>
+			    </div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+			    <span class="carousel-control-prev-icon"></span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+			    <span class="carousel-control-next-icon"></span>
+			</button>
+	    </div>
+	</section>
+	<section class="mt-5">
+		<div class="container">
+			<div class="display-4 text-center mb-5">Our Heading</div>
+			<div class="row">
+				<div class="col-12 col-sm-6 col-lg-3">
+					<div class="card">
+						<div class="card-box text-center">
+							<img src="https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870" class="card-img-top img-fluid">
+							<div class="card-body">
+								<h5 class="card-title">Profile</h5>
+								<div class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</div>
+								<button class="btn btn-danger mt-2">Expolre</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-lg-3">
+					<div class="card">
+						<div class="card-box text-center">
+							<img src="https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870" class="card-img-top img-fluid">
+							<div class="card-body">
+								<h5 class="card-title">Profile</h5>
+								<div class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</div>
+								<button class="btn btn-danger mt-2">Expolre</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-lg-3">
+					<div class="card">
+						<div class="card-box text-center">
+							<img src="https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870" class="card-img-top img-fluid">
+							<div class="card-body">
+								<h5 class="card-title">Profile</h5>
+								<div class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</div>
+								<button class="btn btn-danger mt-2">Expolre</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-lg-3">
+					<div class="card">
+						<div class="card-box text-center">
+							<img src="https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870" class="card-img-top img-fluid">
+							<div class="card-body">
+								<h5 class="card-title">Profile</h5>
+								<div class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</div>
+								<button class="btn btn-danger mt-2">Expolre</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="tb-data mt-5">
+		<div class="container">
+			<div class="table-responsive">
+				<table class="table table-dark table-striped table-striped-columns table-hover table-bordered">
+					<tr>
+						<th>data-1</th>
+						<th>data-2</th>
+						<th>data-3</th>
+						<th>data-4</th>
+						<th>data-5</th>
+						<th>data-6</th>
+						<th>data-7</th>
+						<th>data-8</th>
+					</tr>
+					<tr>
+						<td>000</td>
+						<td>000</td>
+						<td>000</td>
+						<td>000</td>
+						<td>000</td>
+						<td>000</td>
+						<td>000</td>
+						<td>000</td>
+					</tr>
+					<tr>
+						<td>000</td>
+						<td>000</td>
+						<td>000</td>
+						<td>000</td>
+						<td>000</td>
+						<td>000</td>
+						<td>000</td>
+						<td>000</td>
+					</tr>
+					<tr>
+						<td>000</td>
+						<td>000</td>
+						<td>000</td>
+						<td>000</td>
+						<td>000</td>
+						<td>000</td>
+						<td>000</td>
+						<td>000</td>
+					</tr>
+					<tr>
+						<td>000</td>
+						<td>000</td>
+						<td>000</td>
+						<td>000</td>
+						<td>000</td>
+						<td>000</td>
+						<td>000</td>
+						<td>000</td>
+					</tr>
+					<tr>
+						<td>000</td>
+						<td>000</td>
+						<td>000</td>
+						<td>000</td>
+						<td>000</td>
+						<td>000</td>
+						<td>000</td>
+						<td>000</td>
+					</tr>
+					<tr>
+						<td>000</td>
+						<td>000</td>
+						<td>000</td>
+						<td>000</td>
+						<td>000</td>
+						<td>000</td>
+						<td>000</td>
+						<td>000</td>
+					</tr>
+			   </table>
+			</div>
+		</div>
+	</section>
+	<!-- Modal Structure -->
+	<div class="modal fade" id="myModal">
+		<div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title">Register With Us!</h5>
+		        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+		      </div>
+		      <div class="modal-body">
+		      	<form>
+		      		<div class="mb-3">
+		      			<label for="fname" class="form-label">Name:</label>
+		      			<input type="text" id="fname" class="form-control" placeholder="Your name...">
+		      	    </div>
+		      	    <div class="mb-3">
+		      			<label for="mail" class="form-label">Email:</label>
+		      			<input type="email" id="mail" class="form-control" placeholder="Your email...">
+		      	    </div>
+		      	    <div class="mb-3">
+		      			<label for="pass" class="form-label">Password:</label>
+		      			<input type="password" id="pass" class="form-control" placeholder="Your password...">
+		      	    </div>
+		      	    <div class="mb-3">
+		      	    	<label for="inputState" class="form-label">City:</label>
+					    <select id="inputState" class="form-select">
+					      <option selected>Choose City...</option>
+					      <option>Noida</option>
+					      <option>Delhi</option>
+					      <option>Jaipur</option>
+					    </select>
+		      	    </div>
+		      	    <div class="mb-3">
+				      <input class="form-check-input" type="checkbox" id="Check">
+				      <label class="form-check-label" for="Check">
+				        Save my details!
+				      </label>
+				    </div>
+		      	</form>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-primary">Save Me</button>
+		      </div>
+		    </div>
+		</div>
+	</div>
+	<!-- Modal Structure closed -->
+</body>
+</html>
+
+
+
+
