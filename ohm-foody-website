@@ -1,0 +1,72 @@
+# 🍔 Ohm Foddy – Food Website
+
+A responsive and modern food website built using HTML, CSS, Bootstrap, and JavaScript.  
+This project focuses on clean UI, responsive design, and user-friendly layout.
+
+---
+
+## 📌 Project Overview
+Ohm Foddy is a static food website inspired by online food delivery platforms.  
+It showcases food items, customer reviews, FAQs, and a newsletter section with a clean and attractive UI.
+
+---
+
+## 🛠️ Technologies Used
+- HTML5  
+- CSS3  
+- Bootstrap 5  
+- JavaScript  
+- Font Awesome  
+- Google Fonts (Roboto)
+
+---
+
+## ✨ Features
+- Responsive navbar with mobile support  
+- Hero banner with call-to-action button  
+- Animated counter section  
+- About & story sections  
+- Food cards with pricing  
+- Testimonial carousel  
+- FAQ section  
+- Newsletter subscription form  
+- Fully responsive design (mobile, tablet, desktop)
+
+---
+
+## 📱 Responsive Design
+- Desktop (≥ 992px)
+- Tablet (768px – 991px)
+- Mobile (≤ 767px)
+
+Media queries are used to ensure proper layout on all devices.
+
+---
+
+## 🚀 How to Run the Project
+1. Clone the repository  
+2. Open the project folder  
+3. Open `index.html` in your browser  
+
+(No backend required – static website)
+
+---
+
+## 🎯 Learning Outcome
+- Improved HTML & CSS structuring  
+- Better understanding of Bootstrap components  
+- Responsive design using media queries  
+- JavaScript DOM manipulation  
+- Clean UI and layout design practices  
+
+---
+
+## 👨‍💻 Author
+**Om Sharma**  
+Front-End Developer  
+
+📍 Aligarh, Uttar Pradesh  
+🔗 github.com/ompandit20122004-web/html/commits?author=ompandit20122004-web
+
+---
+
